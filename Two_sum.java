@@ -1,7 +1,7 @@
 /* Lets go with brute force approach first
 --->Try to add 2 nums in array until we get our desired target and return index
     But it takes to munch of TC -O(n^2) and  no issue with SC -o(n)
-
+*/
 import java.util.*;
 
 public class Two_sum {
@@ -31,14 +31,14 @@ public class Two_sum {
         
     }
 }
-*/
+
 
 
 /* Now lets try a better approach , it can be done by binary search and 2 pointer
 -->Binary search : sorting the array takes-- O(nlogn) and SC will reamins the same O(n)
 
 
-
+*/
 import java.util.*;
 
 public class Two_sum {
@@ -87,9 +87,14 @@ public class Two_sum {
         sc.close();
     }
 }
-*/
 
-/*
+
+/* 2 pointer
+We sort the array (O(n log n))
+Then use two pointers scanning from both ends → O(n)
+Total = O(nlog n)
+
+ */
 import java.util.*;
 
 public class Two_sum {
@@ -142,7 +147,7 @@ public class Two_sum {
         sc.close();
     }
 }
-*/
+
 
 // traverse array once, storing seen nums in HashMap, for each num check if compl exists
 // it takes -->O(1) on avg.  and then single pass --O(n) , total TC -->O(n)
